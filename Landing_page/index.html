@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WomanAccessories - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="ball"></div>
+    <section>
+        <header>
+            <a href="#"><img src="/Users/blessykancharla/Desktop/picss/download.jpeg" alt="Image description" width="100" height="100"></a>
+            <ul>
+                <li><a href="#Categories">Categories</a></li>
+                <li><a href="Contact">Contact</a></li>
+                <li><a href="FAQ">FAQ</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="content">
+                <h1>Shop <span>Girl Accessories</span></h1>
+                <h2>Order awesome accessories</h2>
+                <p>Welcome to our Girls Accessories Website, the ultimate destination for all your fashion needs! Discover a world of trendy and stylish accessories designed exclusively for girls who want to express their unique style and enhance their outfits.</p>
+                <a href="#">Order Now</a>
+            </div>
+            <div class="products">
+                <img src="/Users/blessykancharla/Desktop/picss/images (5).jpeg" alt="Image description" width="350" height="300" class="Accessories">
+            </div>
+            <ul class="Click">
+                <li><img src="/Users/blessykancharla/Desktop/picss/65-654737_girls-hair-bow-pink-hair-accessory-to-match.png" alt="Image description" width="60" height="60" onclick="imgSlider('/Users/blessykancharla/Desktop/picss/65-654737_girls-hair-bow-pink-hair-accessory-to-match.png');changeColor('#e7b6ab')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/p1.jpeg" alt="Image description" width="60" height="60" onclick="imgSlider('/Users/blessykancharla/Desktop/picss/p1.jpeg');changeColor('#da7189')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/images.jpeg" alt="Image description" width="60" height="60" onclick="imgSlider('/Users/blessykancharla/Desktop/picss/images.jpeg');changeColor('#e8d890')"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Accessories').src = anything;
+        }
+        function changeColor(color) {
+            const ball = document.querySelector('.ball');
+            ball.style.backgroundColor = color;
+        }
+    </script>
+
+    <section id="jewelry-section">
+        <div class="ball"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Shop <span>Jewelry</span></h1>
+                <h2>Discover stunning jewelry pieces</h2>
+                <p>Explore a wide range of elegant and stylish jewelry to enhance your beauty:</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="products">
+                <img src="/Users/blessykancharla/Desktop/picss/images (2).jpeg" alt="Jewelry Image" width="300" height="250" class="Accessories">
+            </div>
+            <ul class="Click">
+                <li><img src="/Users/blessykancharla/Desktop/picss/images (1).jpeg" width="60" height="60" onclick="imgSliderJewelry('/Users/blessykancharla/Desktop/picss/images (1).jpeg');changeColor('#da7189')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/p2.png" width="60" height="60" onclick="imgSliderJewelry('/Users/blessykancharla/Desktop/picss/p2.png');changeColor('#da7189')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/images (4).jpeg" width="60" height="60" onclick="imgSliderJewelry('/Users/blessykancharla/Desktop/picss/images (4).jpeg');changeColor( '#e8d890')"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSliderJewelry(anything) {
+            document.querySelector('#jewelry-section .Accessories').src = anything;
+        }
+        function changeColor(color) {
+            const ball = document.querySelector('.ball');
+            ball.style.backgroundColor = color;
+        }
+    </script>
+
+    <section id="hair-accessories">
+        <div class="ball"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Shop <span>Hair Accessories</span></h1>
+                <h2>Discover trendy hair accessories</h2>
+                <p>Explore a wide range of stylish and fashionable hair accessories to elevate your look:</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="products">
+                <img src="/Users/blessykancharla/Desktop/picss/hh1.jpeg" alt="Hair Accessories Image" width="300" height="250" class="Accessories">
+            </div>
+            <ul class="Click">
+                <li><img src="/Users/blessykancharla/Desktop/picss/h4.jpeg" width="60" height="60" onclick="imgSliderHair('/Users/blessykancharla/Desktop/picss/h4.jpeg');changeColor('#e7b6ab')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/h3.jpeg" width="60" height="60" onclick="imgSliderHair('/Users/blessykancharla/Desktop/picss/h3.jpeg');changeColor('#da7189')"></li>
+                <li><img src="/Users/blessykancharla/Desktop/picss/h2.jpeg" width="60" height="60" onclick="imgSliderHair('/Users/blessykancharla/Desktop/picss/h2.jpeg');changeColor('#e8d890')"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSliderHair(anything) {
+            document.querySelector('#hair-accessories .Accessories').src = anything;
+           
+        }
+        function changeColor(color) {
+            const ball = document.querySelector('.ball');
+            ball.style.backgroundColor = color;
+        }
+    </script>
+    <section id="reviews-section">
+        <div class="container">
+            <h1>Customer Reviews</h1>
+            <div class="review">
+                <img src="/Users/blessykancharla/Desktop/picss/r.png" alt="Customer Review" width="70" height="70">
+                <p>"The accessories are amazing! They perfectly complement my outfits. Highly recommend!"</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="review">
+                <img src="/Users/blessykancharla/Desktop/picss/r.png" alt="Customer Review" width="70" height="70">
+                <p>"I'm in love with the jewelry collection. Exquisite designs and great quality."</p>
+                <h3>Jane Smith</h3>
+            </div>
+            <div class="review">
+                <img src="/Users/blessykancharla/Desktop/picss/r.png" alt="Customer Review" width="70" height="70">
+                <p>"The hair accessories are my favorite! They add a touch of glam to my hairstyles."</p>
+                <h3>Emily Johnson</h3>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h1>Contact info</h1>
+            <div class="contact-info">
+                <img src="/Users/blessykancharla/Desktop/picss/insta.jpeg" alt="Customer Review" width="70" height="70">
+                <h3>Instagram</h3>
+                <p>@women_accessories12</p>
+            </div>
+            <div class="contact-info">
+                <img src="/Users/blessykancharla/Desktop/picss/mail.png" alt="Customer Review" width="70" height="70">
+                <h3>Email</h3>
+                <p>womenaccessories121@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="/Users/blessykancharla/Desktop/picss/phone.png" alt="Customer Review" width="70" height="70">
+                <h3>Phone Number</h3>
+                <p>+91 12345123098</p>
+            </div>
+        </div>
+    </section>
+   
+    
+    
+</body>
+</html>
